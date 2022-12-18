@@ -50,11 +50,12 @@ export default function Pizza({pizza}) {
       </div>
       <Modal show={show}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal title</Modal.Title>
+          <Modal.Title>{pizza.name}</Modal.Title>
         </Modal.Header>
 
         <Modal.Body>
-          <p>Modal body text goes here.</p>
+         <img src={pizza.image} className="img-fluid" style={{height: "400px"}}/>
+         <p>{pizza.description}</p>
         </Modal.Body>
 
         <Modal.Footer>
